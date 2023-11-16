@@ -1,0 +1,15 @@
+<h1>Your Flats</h1>
+
+<div class="container text-center">
+    <% @flats.each do |flat| %>
+      <div class="col-12">
+        <img class="card-img" src="https://cdna.artstation.com/p/assets/images/images/016/956/094/large/sylvain-sarrailh-kamehousearstation.jpg?1554125681">
+        <div class="card-body">
+          <h3 class="card-title"><%= flat.name%></li></h3>
+          <p class="card-text"><%= flat.address %></p>
+        </div>
+        <p><%= flat.price_per_night %></p>
+        <p><%= flat.number_of_guests %></p>
+      </div>
+    <% end %>
+</div>
